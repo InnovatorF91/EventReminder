@@ -1,0 +1,120 @@
+﻿<Window
+    x:Class="EventReminder.AddEventWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="添加新事件"
+    Width="600"
+    Height="400">
+    <Grid>
+        <StackPanel Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="eventNameTextBoxText"
+                    Width="187"
+                    Margin="0,0,0,10"
+                    Text="事件名稱："
+                    TextAlignment="Right" />
+                <TextBox
+                    x:Name="eventNameTextBox"
+                    Width="200"
+                    Margin="0,0,0,10" />
+            </StackPanel>
+            <DatePicker
+                x:Name="datePicker"
+                Width="200"
+                Margin="10,0,0,10"
+                LostFocus="datePicker_LostFocus"
+                PreviewMouseDown="datePicker_PreviewMouseDown" />
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="timePickerText"
+                    Width="187"
+                    Margin="0,0,0,10"
+                    Text="輸入時間："
+                    TextAlignment="Right" />
+                <TextBox
+                    x:Name="timePicker"
+                    Width="200"
+                    Margin="0,0,0,10" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="reminderComboBoxText"
+                    Width="187"
+                    Margin="0,0,0,10"
+                    Text="提醒設置："
+                    TextAlignment="Right" />
+                <ComboBox
+                    x:Name="reminderComboBox"
+                    Width="200"
+                    Margin="0,0,0,10">
+                    <ComboBoxItem Content="提前 5 分鐘" />
+                    <ComboBoxItem Content="提前 10 分鐘" />
+                    <ComboBoxItem Content="提前 1 小時" />
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="repeatComboBoxText"
+                    Width="187"
+                    Margin="0,0,0,10"
+                    Text="重複設置："
+                    TextAlignment="Right" />
+                <ComboBox
+                    x:Name="repeatComboBox"
+                    Width="200"
+                    Margin="0,0,0,10">
+                    <ComboBoxItem Content="永不" />
+                    <ComboBoxItem Content="每天" />
+                    <ComboBoxItem Content="每週" />
+                    <ComboBoxItem Content="每月" />
+                    <ComboBoxItem Content="每年" />
+                </ComboBox>
+            </StackPanel>
+
+            <CheckBox
+                x:Name="birthdayReminderCheckBox"
+                Margin="0,0,0,10"
+                Checked="birthdayReminderCheckBox_Checked"
+                Content="啟用生日提醒"
+                Unchecked="birthdayReminderCheckBox_Unchecked" />
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="labelTextBoxText"
+                    Width="187"
+                    Margin="0,0,0,10"
+                    Text="標籤："
+                    TextAlignment="Right" />
+                <TextBox
+                    x:Name="labelTextBox"
+                    Width="200"
+                    Margin="0,0,0,10" />
+            </StackPanel>
+
+
+            <TextBox
+                x:Name="notesTextBox"
+                Width="400"
+                Height="100"
+                Margin="0,0,0,10"
+                GotFocus="NotesTextBox_GotFocus"
+                LostFocus="NotesTextBox_LostFocus" />
+
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button
+                    Width="80"
+                    Click="SaveButton_Click"
+                    Content="保存" />
+                <Button
+                    Width="80"
+                    Margin="10,0,0,0"
+                    Click="CancelButton_Click"
+                    Content="取消" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
