@@ -66,6 +66,11 @@ namespace EventReminder
 			// 這裡可以加載事件數據到EventListView
 			var folderPath = Share.GetJsonFolderPath();
 
+			if (!Directory.Exists(folderPath))
+			{
+				Directory.CreateDirectory(folderPath);
+			}
+
 			var files = Directory.GetFiles(folderPath);
 			if (files.Length == 0)
 			{
