@@ -38,3 +38,4 @@ C#とWPF(.NET Framework 4.8)で開発された、シンプルで実用的なデ�
 - **ストレージの例**：
   ```json
 {"Name":"\u9762\u8A66","PinyinName":"MianShi","DateTime":"2025-04-21T12:00:00","Label":"\u9762\u8A66","ReminderSetting":"\u5230\u9EDE\u63D0\u9192","RepeatSetting":"\u6C38\u4E0D","IsBirthday":false,"Note":"\u4ECA\u592912\uFF1A00\u9762\u8A66"}
+  ```
