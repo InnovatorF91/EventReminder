@@ -36,4 +36,6 @@ C#とWPF(.NET Framework 4.8)で開発された、シンプルで実用的なデ�
 - **UI 技術**：WPF（非 MVVM 架構）
 - **データ保管**：使用 `Newtonsoft.Json` 套件進行序列化至本地 JSON 檔案
 - **ストレージの例**：
-```json {"Name":"\u9762\u8A66","PinyinName":"MianShi","DateTime":"2025-04-21T12:00:00","Label":"\u9762\u8A66","ReminderSetting":"\u5230\u9EDE\u63D0\u9192","RepeatSetting":"\u6C38\u4E0D","IsBirthday":false,"Note":"\u4ECA\u592912\uFF1A00\u9762\u8A66"} ```
+```json
+{"Name":"\u9762\u8A66","PinyinName":"MianShi","DateTime":"2025-04-21T12:00:00","Label":"\u9762\u8A66","ReminderSetting":"\u5230\u9EDE\u63D0\u9192","RepeatSetting":"\u6C38\u4E0D","IsBirthday":false,"Note":"\u4ECA\u592912\uFF1A00\u9762\u8A66"}
+```
